@@ -10,5 +10,6 @@ The most important things to know are:
 - Presenter notes after `???` within one slide
 - Toggle presenter notes during presentation with `P`
 - Read the full guide to [remark markdown](https://github.com/gnab/remark)
+- Press `C` to clone a display; then press `P` to switch to presenter mode. Open help menu with `h`
 
-Fork this repository to get started!
+Fork this repository to get started! 
