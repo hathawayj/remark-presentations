@@ -9,5 +9,6 @@ The most important things to know are:
 - Slides are separated by `----`
 - Presenter notes after `???` within one slide
 - Toggle presenter notes during presentation with `P`
+- Read the full guide to [remark markdown](https://github.com/gnab/remark)
 
 Fork this repository to get started!
