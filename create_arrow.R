@@ -19,6 +19,12 @@ sas_arrow <- function(first, max_rows = chunk_size,
                         folder_path = "arrow"){
   
   dat <- read_sas(sas_file, skip = first, n_max = max_rows)
+  dat <- dat %>% 
+    mutate(marathon = marathon %>%
+        stringr::str_to_lower() %>%
+        stringr::str_replace_all(" ", "_") %>%
+        stringr::str_replace_all("\x97","")
+        )
   feather_fname <- stringr::str_c(folder_path, "/feather/", stringr::str_c("file_", sprintf("%.0f", first/1000) ,"k.feather"))
   parquet_fname <- stringr::str_c(folder_path, "/parquet/", stringr::str_c("file_", sprintf("%.0f", first/1000) ,"k.parquet"))
   arrow::write_feather(dat, feather_fname) # no compression codecs installed
@@ -29,4 +35,4 @@ sas_arrow <- function(first, max_rows = chunk_size,
 tic()
 purrr::map(first, ~sas_arrow(first = .x))
 toc()
-# 108.209 sec elapsed
+# 122.029 sec elapsed
