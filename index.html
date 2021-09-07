@@ -12,12 +12,15 @@
       h1 {
         font-family: 'Yanone Kaffeesatz';
         font-weight: normal;
-        color:darkslategrey
+        color:darkslategrey;
       }
       h2, h3 {
         font-family: 'Yanone Kaffeesatz';
         font-weight: normal;
       }
+      .my-one-page-font {
+        font-size: 30px;
+      }     
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
             /* Two-column layout */
       .left-column {
@@ -59,7 +62,7 @@ class: center, middle
 
 ---
 
-class: middle
+class: middle, my-one-page-font
 # J. Hathaway
 __Glorified adjunct or visiting fellow__    
 _Depends on who you ask._
@@ -85,7 +88,7 @@ Highlight how communication is more than a good slide deck. It includes code, em
       
 ---
 
-class: middle      
+class: middle, my-one-page-font    
 # Conversation topics
 
 1. What is communication?
@@ -108,7 +111,7 @@ Highlight how communication is more than a good slide deck. It includes code, em
 ---
 
 
-class: middle      
+class: middle, my-one-page-font      
 count: false
 # Conversation topics
 
@@ -130,7 +133,7 @@ Highlight how communication is more than a good slide deck. It includes code, em
    
 
 ---
-class: center      
+class: center, my-one-page-font    
 # What is communication?
 
 > The successful conveying or sharing of ideas and feelings between senders and recipients.
@@ -140,10 +143,12 @@ class: center
 
 ---
 
-class: center, middle    
+class: center, middle, my-one-page-font    
 # How do I know communication is happening?
 
-### __Forward moving questions and energy signal communication.__ 
+__Forward moving questions and energy signal communication.__   
+   
+   
 _Whether it is a first date, interview, or programming session;_    
 _the same feeling prevails._
 
@@ -224,7 +229,7 @@ count: false
 
 ## You don't sign up for Slack; you sign up for a [Slack Workspace](https://slack.com/get-started#/createnew)
 _yes each workspace can be a different you (email)_
-## Channels organize your teams [topics or conversations](https://slack.com/features/channels#slack-channels)
+## Channels organize your team's [topics or conversations](https://slack.com/features/channels#slack-channels)
 
 ---
 
@@ -233,7 +238,7 @@ count: false
 
 ## You don't sign up for Slack; you sign up for a [Slack Workspace](https://slack.com/get-started#/createnew)
 _yes each workspace can be a different you (email)_
-## Channels organize your teams [topics or conversations](https://slack.com/features/channels#slack-channels)
+## Channels organize your team's [topics or conversations](https://slack.com/features/channels#slack-channels)
 ## Slack is perfect for asynchronous meetings
 
 <!-- END # Slack  -->
@@ -248,12 +253,13 @@ https://docs.github.com/en/get-started/quickstart/communicating-on-github
 
 ---
 
+class: my-one-page-font
 # Github
 
 
-### - I enjoy Github's tools for managing more formal parts of my team's work.
+- __I enjoy Github's tools for managing more formal parts of my team's work.__
 
-### - I see Slack as a tool to facilitate asynchronous team discussions and Github as a tool to track and manage team timelines, work, and deliverables.
+- __I see Slack as a tool to facilitate asynchronous team discussions and Github as a tool to track and manage team timelines, work, and deliverables.__
 
 
 <!-- # Github -->
@@ -309,15 +315,25 @@ class: center, middle, inverse
 # Can we discuss some examples of data communication? 
 
 ---
-class: middle
-# Formats 
-_The relationship can't even start without a space and the ability to see_
+class: middle, my-one-page-font
+#  Background on `.parquet`
+
+> Parquet [files] make the advantages of compressed, efficient columnar data representation available to any project ~~in the Hadoop ecosystem.~~
+
+- [Databricks on Parquet](https://databricks.com/glossary/what-is-parquet#:~:text=Parquet%20is%20an%20open%20source,like%20CSV%20or%20TSV%20files.&text=Parquet%20can%20only%20read%20the%20needed%20columns%20therefore%20greatly%20minimizing%20the%20IO.)
+- [Apache on Parquet](https://github.com/apache/parquet-format)
+- [Aparche Arrow review](https://maximilianmichels.com/2020/apache-arrow-the-hidden-champion/)
+
+---
+class: middle, my-one-page-font
+# Formats
+_Relationships can't even start without a space and the ability to see._
 
 ### [`create_arrow.py`](https://github.com/DS7900/analytics-collaboration-hathaway/blob/master/create_arrow.py)
 ### [`create_arrow.R`](https://github.com/DS7900/analytics-collaboration-hathaway/blob/master/create_arrow.R)
 
 ---
-class: middle
+class: middle, my-one-page-font
 # File sizes and read times 
 _The conversation needs to move as smoothly as possible._
 
@@ -326,13 +342,24 @@ _The conversation needs to move as smoothly as possible._
 
 
 ---
-class: middle
+class: middle, my-one-page-font
 # Paritioning and munging
 _The first date (err. data) interactions._
 
 ### [`explore_bigdata.R`](https://github.com/DS7900/analytics-collaboration-hathaway/blob/master/explore_bigdata.R)
 
-Now you can see the [`arrow/parquet_grouped`](https://github.com/DS7900/analytics-collaboration-hathaway/tree/master/arrow/parquet_grouped)
+See the [`arrow/parquet_grouped`](https://github.com/DS7900/analytics-collaboration-hathaway/tree/master/arrow/parquet_grouped) folder for an example.
+
+---
+class: middle, my-one-page-font
+# DuckDB with Python
+
+- [DuckDB website](https://duckdb.org/)
+- [DuckDB Python example](https://duckdb.org/2021/05/14/sql-on-pandas.html)
+- [DuckDB Parquet example](https://duckdb.org/docs/data/parquet)
+- [BI Cortex review](https://bicortex.com/duckdb-the-little-olap-database-that-could-tpc-ds-benchmark-results-and-first-impressions/)
+- [Hacker news](https://news.ycombinator.com/item?id=27636361)
+- [DuckDB overview](https://db.in.tum.de/teaching/ss19/moderndbs/duckdb-tum.pdf)
 
 
     </textarea>
